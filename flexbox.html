@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreFlexBox</title>
+    <style>
+        .container{
+            border: 2px dotted rgb(24, 133, 131);
+            display: flex;
+            /* justify-content: center; item horizental er jonno justify-content. */
+            /* align-items: center;item vertical korar jonno aling-items use kora hoy */
+
+            /*div er vitor horizentaly & verticaly soman vabe majhe rakhte justify&aling duitai center kore dite hoy*/
+
+            height: 300px;
+            flex-direction: row; /* flex-direction use kore containt kon dike thakbe seta bojhanor jonno.*/
+
+            flex-wrap: wrap;/* flex-warp use korle eta soman vabe grid kore dei...*/
+        }
+        .box{
+            border: 2px dashed peru;
+            width: 100px;
+            /* height: 100px; */
+        }
+        #box2{
+            flex-grow: 1;
+            /* aita onek ta responsive er moto. flex-grow use korle fixd jaiga bade baki jaiga tuku o dokhol korbe. */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div id="box2" class="box">box-2</div>
+        
+    </div>
+</body>
+</html>
